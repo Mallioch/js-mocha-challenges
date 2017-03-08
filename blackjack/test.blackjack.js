@@ -3,7 +3,7 @@
 describe('Blackjack', function() {
   describe('countCards', function() {
 
-    //Need to know: Array iteration
+    //NTK: Array iteration
     it('should return 14 when given 10 and 4.', function() {
       var card1 = { suit: 'H', number: 10 };
       var card2 = { suit: 'S', number: 4 };
@@ -13,6 +13,7 @@ describe('Blackjack', function() {
       chai.assert.equal(14, countCards(cards));
     });
 
+    //NTK: conditionals
     it('should return 13 with 3 and face card.', function() {
       var cards = [
         { suit: 'H', number: 'Q' },
@@ -32,6 +33,7 @@ describe('Blackjack', function() {
       chai.assert.equal(19, countCards(cards));
     });
 
+    //NTK: Conditional with greater than
     it('should return 21 with A and face card.', function() {
       var cards = [
         { suit: 'H', number: 'A' },
