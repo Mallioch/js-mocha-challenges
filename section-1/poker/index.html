@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="../../lib/mocha.css" rel="stylesheet" />
+  <link href="../../style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="lab-intro">
+    <header>
+      <h1>JavaScript Labs</h1>
+    </header>
+
+    <div class="intro-content">
+      <h2>Teaching notes:</h2>
+      <ul>
+        <li>Calculating pairs well requires understanding the dictionary qualities of objects.</li>
+        <li>Calculating three of a kind, if done after pairs, may not work, so they have to think about ordering.</li>
+        <li>When going from calculating pairs to three-of-a-kind, you have a good example of refactoring.</li>
+        <li>Flush can be a good example of an early exit, also looping starting at second element.</li>
+        <li>Straight requires sorting, thinking of face cards as numeric sequencies, looping while always looking at previous.</li>
+        <li>Straight flush requires combining both the flush and straight functions, and then ordering that before both of them.</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div id="mocha"></div>
+
+  <script src="../../lib/jquery.js"></script>
+  <script src="../../lib/expect-0-3-1.js"></script>
+  <script src="../../lib/should.js"></script>
+  <script src="../../lib/mocha.js"></script>
+  <script src="../../lib/chai.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="poker.js"></script>
+  <script src="test.poker.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>
