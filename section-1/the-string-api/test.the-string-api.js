@@ -113,5 +113,3 @@ describe('Strings', function() {
   });
 
 });
-
-//invisible characters
