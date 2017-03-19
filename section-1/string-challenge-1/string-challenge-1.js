@@ -7,3 +7,15 @@ function stringReverser(str) {
 
   return newStr;
 }
+
+function truncate(sentence) {
+  var newSentence = sentence.substr(0, 15);
+  newSentence += '...';
+  return newSentence;
+}
+
+function truncateByCount(sentence, count) {
+  var newSentence = sentence.substr(0, count);
+  newSentence += '...';
+  return newSentence;
+}

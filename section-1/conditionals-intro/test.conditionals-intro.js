@@ -44,7 +44,7 @@ describe('Conditionals are for making decisions.', function() {
       value = 1;
     }
     chai.assert.equal(value, 0);
-
+open
     if (undefined) {
       value = 1;
     }
