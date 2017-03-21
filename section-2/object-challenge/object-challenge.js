@@ -1,0 +1,2 @@
+function averageIncomes(people) {
+}
