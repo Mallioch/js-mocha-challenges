@@ -2,6 +2,15 @@
 
 describe('String Challenge ', function() {
 
+  challenge('Implement this function that strips all punctuation from a string.', function() {
+
+    var str = 'Yes, just the five. Husbands should be like Kleenex: soft, strong and disposable.';
+    var result = stripPuncutation(str);
+
+    chai.assert.equal(result, 'Yes just the five Husbands should be like Kleenex soft strong and disposable');
+
+  });
+
   challenge('Implement this function that reverses a string.', function() {
     var str = 'Reverse me';
     var result = stringReverser(str);
@@ -25,8 +34,14 @@ describe('String Challenge ', function() {
 
     var result = truncateByCount(sentence, 20);
     chai.assert.equal(result, 'Gone Fishin with Dan...');
-
   });
 
+  challenge('Implement this function that will capitalize every other letter in the string, starting with the first.', function() {
+    //Hint: You might find the modulo operator handy.
+    var str = 'Symmetrical book stacking';
+    var result = capitalizeEveryOtherLetter(str);
+
+    chai.assert.equal(result, 'SyMmEtRiCaL BoOk sTaCkInG');
+  });
 
 });
