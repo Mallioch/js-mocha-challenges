@@ -2,7 +2,7 @@
 
 describe('Rock Paper Scissors', function() {
 
-  it('rock beats scissors - reverse order.', function() {
+  it('rock beats scissors.', function() {
 
     var first = 'rock';
     var second = 'scissors';
@@ -69,7 +69,7 @@ describe('Rock Paper Scissors', function() {
 
     var result = whoWins(first, second);
 
-    chai.assert.equal(result, 'neither');
+    chai.assert.equal(result, 'tie');
   });
 
   it('both scissors, neither wins.', function() {
@@ -79,7 +79,7 @@ describe('Rock Paper Scissors', function() {
 
     var result = whoWins(first, second);
 
-    chai.assert.equal(result, 'neither');
+    chai.assert.equal(result, 'tie');
   });
 
   it('both rock, neither wins.', function() {
@@ -89,7 +89,7 @@ describe('Rock Paper Scissors', function() {
 
     var result = whoWins(first, second);
 
-    chai.assert.equal(result, 'neither');
+    chai.assert.equal(result, 'tie');
   });
 
 });

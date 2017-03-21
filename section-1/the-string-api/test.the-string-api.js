@@ -7,7 +7,7 @@ describe('Strings are like arrays so', function() {
     var str = 'Jack smote the wicked dragon mightily with a wet fish.';
 
     var length;
-    //var length = str.length;
+    var length = str.length;
 
     chai.assert.equal(length, 54);
   });

@@ -20,6 +20,6 @@ function whoWins(first, second) {
     return 'second';
   }
   else if (first === second) {
-    return 'neither';
+    return 'tie';
   }
 }
