@@ -1,5 +1,3 @@
-//In this activity, you will have to look at some documentation and figure out the format!
-
 describe('String Challenge ', function() {
 
   challenge('Implement this function that strips all punctuation from a string.', function() {
